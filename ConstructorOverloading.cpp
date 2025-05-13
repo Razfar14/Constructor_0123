@@ -9,7 +9,7 @@ class mahasiswa{
         mahasiswa();
         mahasiswa(int);
         mahasiswa(string);
-        mahasiswa(string iNama, int iNim);
+        mahasiswa(int iNim, string iNama);
         void cetak();
 };
 mahasiswa::mahasiswa(){
@@ -20,4 +20,13 @@ mahasiswa::mahasiswa(int iNim){
 }
 mahasiswa::mahasiswa(string iNama){
     nama = iNama;
+}
+void mahasiswa::cetak(){
+    cout << "NIM : " << nim << endl;
+    cout << "Nama: " << nama << endl;
+}
+
+int main(){
+    mahasiswa mhs1 (102032);
+    mahasiswa mhs2 ("Andi");
 }
