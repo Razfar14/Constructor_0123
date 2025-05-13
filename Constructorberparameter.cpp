@@ -7,7 +7,7 @@ class mahasiswa{
 };
 
 mahasiswa::mahasiswa(string nama, int nim){
-    cout << "Constructor dipanggil" << endl;
+    cout << "Constructor Dengan Parameter Terpanggil" << endl;
     cout << "Nama : " << nama << endl;
     cout << "NIM : " << nim << endl;
 };
